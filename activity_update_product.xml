@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProductActivity"
+    android:paddingHorizontal="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/updateProductCodeInput"
+            android:hint="Код"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@color/bg_primary"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            />
+
+
+        <EditText
+            android:id="@+id/updateProductNameInput"
+            android:hint="Ім'я"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/bg_primary"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            />
+
+        <EditText
+            android:id="@+id/updateProductCategoryInput"
+            android:hint="Категорія"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/bg_primary"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            />
+
+        <Button
+            android:id="@+id/updateProductButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Submit" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

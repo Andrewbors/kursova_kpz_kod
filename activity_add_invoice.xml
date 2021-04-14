@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddInvoiceActivity"
+    android:paddingHorizontal="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/invoiceNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:layout_weight="1"
+                android:background="@color/bg_primary"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:hint="ПІБ" />
+
+            <Spinner
+                android:id="@+id/invoicePersonTypeSpinner"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:background="@color/bg_primary"
+                />
+
+            <EditText
+                android:id="@+id/invoiceAddressInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+
+                android:layout_weight="1"
+                android:background="@color/bg_primary"
+                android:ems="10"
+                android:hint="Адреса"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp" />
+
+            <EditText
+                android:id="@+id/invoicePhoneInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:background="@color/bg_primary"
+                android:ems="10"
+                android:hint="Номер телефону"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp" />
+
+            <EditText
+                android:id="@+id/invoiceDocumentInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@color/bg_primary"
+                android:ems="10"
+                android:hint="Код документа"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp" />
+
+            <EditText
+                android:id="@+id/invoiceBankInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@color/bg_primary"
+                android:ems="10"
+                android:hint="Назва банку"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp" />
+
+            <EditText
+                android:id="@+id/invoiceDetailsInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@color/bg_primary"
+                android:ems="10"
+                android:hint="Реквізити"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp" />
+
+            <EditText
+                android:id="@+id/invoiceProductInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@color/bg_primary"
+                android:ems="10"
+                android:hint="Код товару"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp" />
+
+            <EditText
+                android:id="@+id/invoiceCountInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@color/bg_primary"
+                android:ems="10"
+                android:hint="Кількість"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp" />
+
+            <EditText
+                android:id="@+id/invoicePriceInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@color/bg_primary"
+                android:ems="10"
+                android:hint="Ціна за штуку"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp" />
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/addInvoiceButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Submit" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
